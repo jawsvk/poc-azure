@@ -1,12 +1,7 @@
 import React from 'react';
 import {AppRegistry} from 'react-native';
 import {AzureInstance, AzureLoginView} from 'react-native-azure-ad-2';
-
-const CREDENTIAILS = {
-    client_id: 'ab6859bd-960a-4173-a5e3-9fe189be8a59',
-    client_secret: '2fzWtX7e4g4_dalePtVl/QBaTabt.rj[',
-    scope: 'User.Read'
-  };
+import {CREDENTIAILS} from '../constants/Credentials';
   
   export default class AzureAuth extends React.Component {
 	constructor(props){
