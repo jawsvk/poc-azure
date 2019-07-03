@@ -1,6 +1,6 @@
 import React from 'react';
 import {AppRegistry} from 'react-native';
-import {AzureInstance, AzureLoginView} from 'react-native-azure-ad-2';
+import {AzureInstance, AzureLoginView, AzureLoginView2} from 'react-native-azure-ad-2';
 import {CREDENTIAILS} from '../constants/Credentials';
   
   export default class AzureAuth extends React.Component {
@@ -20,7 +20,7 @@ import {CREDENTIAILS} from '../constants/Credentials';
 
     render() {
         return (
-            <AzureLoginView
+            <AzureLoginView2
             	azureInstance={this.azureInstance}
             	loadingMessage="Requesting access token"
             	onSuccess={this._onLoginSuccess}
